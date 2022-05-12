@@ -6,6 +6,17 @@
   height: 40vmin;
   pointer-events: none;
 }
+.container-fluid{
+  background: url('https://th.bing.com/th/id/OIP.F5Rm3iDuJpIvmyMJ_Np8bgHaDB?w=309&h=142&c=7&r=0&o=5&dpr=1.25&pid=1.7');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:100vh;
+display:grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 30%;
+padding:2%
+  
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -34,5 +45,20 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@media screen and (max-width:1024px){
+  .container-fluid{
+    grid-template-columns: 1fr 2fr;
+  }
+}
+@media screen and (max-width:900px){
+  .container-fluid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width:400px){
+  .container-fluid{
+    grid-template-columns: 1fr;
   }
 }
